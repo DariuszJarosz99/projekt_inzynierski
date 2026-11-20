@@ -63,7 +63,3 @@ Scryfall dostarcza dane kart i obrazy, a obrazy ładuje przeglądarka wprost z j
 ### Testy: pytest + SciPy
 
 pytest sprawdza silnik losowania: m.in. czy generator z ustalonym ziarnem daje powtarzalny wynik. SciPy służy do testu chi-kwadrat: symulacja około 100 tysięcy otwarć dla wybranego wydania, a wynik porównany z oczekiwanymi częstościami trafia do pracy jako tabela. Silnik można testować bez reszty aplikacji, bo packs-service jest niezależny.
-
-### Uruchamianie: Docker Compose
-
-Jedno polecenie uruchamia trzy kontenery (frontend, usługa aplikacji i packs-service). Opcjonalnie, jeśli promotor zażąda chmury, ten sam układ można wdrożyć na Microsoft Azure, a SQLite zastąpić zarządzanym PostgreSQL.
